@@ -1,0 +1,184 @@
+.container {
+  max-width: 1780px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*                                       HEADER */
+
+
+.header_box {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Poppins';
+  font-size: 22px;
+}
+
+/* Nav-ს სიგანე თუ არ განესაზღვრა, justify-content-ის space-around თვისებით, li-ებს ერთმანეთს ვერ დავაშორებთ, რადგან მას მხოლოდ ტექსტისთვის საკმარისი სიგანე გააჩნია. flex-ებამდე თითოეულ li-ის ვაშორებდით margin-ებით ან padding-ებით, რაც მთელი ნავიგაციის სიგანეს ავტომატურად ზრდიდა, მაგრამ flex-ის თვისებამ რომ იმუშავს, nav-ს წინასწარ უნდა განესაზღვროს საკმარისი სიგანე. %-ით სიგანის განსაზღვირის შემთხვევაში სხვადასხვა რეზოლუციაზე გადაწყობისას ნავიგაცია შესამის %-ულ სიგანეს დაიჭერს.
+nav-ში მხოლოდ ვიდსი გაიწერება, justify-content-ი li-ის უშუალო მშობელს - ul-ს უნდა განესაზღვროს.  */
+.header_nav {
+  width: 40%;
+}
+
+.header_ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header_li {
+  transition-property: all;
+}
+
+.header_li:hover {
+  color: #4468e2;
+  font-weight: bold;
+}
+
+/* ლოგოს ფუნქციები */
+.logo_img {
+  width: 27px;
+  height: 27px;
+  animation: logo 1s infinite linear;
+}
+
+@keyframes logo {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.header_h1 {
+  font-size: 19px;
+  margin-left: 20px;
+}
+
+.header_button {
+  width: 104;
+  height: 34px;
+  border-radius: 20px;
+  border: none;
+  background-color: #4468e2;
+  color: white;
+  font-size: 19px;
+  font-family: 'Poppins';
+  cursor: pointer;
+  transition-property: all;
+}
+
+.header_button:hover {
+  background-color: white;
+  border: 1px solid #4468e2;
+  color: #4468e2;
+}
+
+
+
+/*                                    SECTION FIRST */
+.section_first {
+  width: 100%;
+  height: 608px;
+  background-image: url(../images/background\ image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section_first_h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 260px;
+  font-family: 'Poppins';
+}
+
+/*                                    SECTION SECOND*/
+
+.section_second_h1 {
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 40px;
+  padding: 100px;
+}
+
+.section_second_imges_div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.section_second_img_box {
+  width: 552px;
+  height: 650px;
+}
+
+.section_second_img {
+  width: 552px;
+  height: 398px;
+}
+
+.section_second_h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  font-family: 'Poppins';
+}
+
+.section_second_P {
+  font-size: 26px;
+  font-family: 'Poppins';
+}
+
+
+/*                                    FOOTER */
+.footer_section {
+  width: 100%;
+  height: 178px;
+  background-color:#e1e8f8;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 24px;
+  align-items: center;
+  padding-left:5px;
+  font-family: 'Poppins';
+}
+
+.footer_nav {
+  width: 40%;
+}
+
+.footer_ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_li {
+  margin-right: 40px;
+}
+
+/* Icon-ების სტილები */
+.fa-square-facebook {
+  font-size: 40px;
+}
+
+.fa-square-instagram {
+  font-size: 40px;
+}
+
+.fa-linkedin {
+  font-size: 40px;
+}
+
+.footer_icons_div {
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+}
