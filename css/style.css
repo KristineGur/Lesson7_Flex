@@ -57,9 +57,10 @@ nav-ში მხოლოდ ვიდსი გაიწერება, justi
 }
 
 .header_div {
-  width: 10%;
+  width: 7%;
   display: flex;
   justify-content: space-between;
+  
 }
 .header_h1 {
   font-size: 19px;
